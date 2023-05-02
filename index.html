@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Google Keep</title>
+  </head>
+  <body>
+    <!-- Header of the page -->
+    <header>
+      <div class="logo"><b>Google</b>Keep</div>
+      <button class="take-note">Take Note</button>
+      <a href="#search" class="search-note">Search Note</a>
+      <div class="search-bar">
+        <i class="fa fa-search"></i>
+        <input type="text" id="search" placeholder="Search" maxlength="64" />
+      </div>
+    </header>
+    <main>
+      <!-- The containter that creates tasks -->
+      <div class="create-note">
+        <input
+          type="text"
+          placeholder="Title"
+          id="title_note"
+          maxlength="32"
+          required
+        />
+        <textarea
+          placeholder="Take a note.."
+          id="desc_note"
+          maxlength="128"
+        ></textarea>
+        <div class="footer-create">
+          <div class="options">
+            <label>
+              <input type="color" class="changeColor" />
+              <i class="fa fa-paint-brush"></i>
+            </label>
+            <label>
+              <input type="file" accept="image/*" class="pickImage" />
+              <i class="fa fa-picture-o"></i>
+            </label>
+          </div>
+          <button class="close">Close</button>
+        </div>
+      </div>
+      <!-- Containter that hold the tasks -->
+      <div class="container-note"></div>
+    </main>
+    <template></template>
+  </body>
+</html>
